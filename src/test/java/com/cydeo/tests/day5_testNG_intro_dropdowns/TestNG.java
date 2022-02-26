@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 
 public class TestNG {
 
-    @Test (priority = 1)
+    @Test(priority = 1)
     public void test1(){
         System.out.println("Test 1 is running...");
 

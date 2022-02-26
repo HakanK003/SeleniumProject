@@ -55,7 +55,6 @@ public class T5_checkboxes {
 //            System.out.println("verification fail");
 //        }
 
-        //BREAK UNTIL 3.10CST
 
     }
 }
