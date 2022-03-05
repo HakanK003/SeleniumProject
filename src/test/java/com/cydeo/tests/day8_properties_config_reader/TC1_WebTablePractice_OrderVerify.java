@@ -16,7 +16,7 @@ public class TC1_WebTablePractice_OrderVerify {
     public WebDriver driver;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
 
         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
@@ -26,7 +26,7 @@ public class TC1_WebTablePractice_OrderVerify {
     }
 
     @Test
-    public void order_name_verify_test(){
+    public void order_name_verify_test() {
 
         //2. Verify Bob’s name is listed as expected. //Expected: “Bob Martin”
 
@@ -46,60 +46,58 @@ public class TC1_WebTablePractice_OrderVerify {
         String expectedDate = "12/31/2021";
         String actualDate = bobMartinDateCell.getText();
 
-        Assert.assertEquals(actualDate,expectedDate);
+        Assert.assertEquals(actualDate, expectedDate);
 
     }
 
     @Test
-    public void test2(){
+    public void test2() {
 
-        String customerOrderDate1 = WebUtilities.returnOrderDate(driver,"Alexandra Gray");
+        String customerOrderDate1 = WebUtilities.returnOrderDate(driver, "Alexandra Gray");
 
         System.out.println(customerOrderDate1);
 
-        String customerOrderDate2 = WebUtilities.returnOrderDate(driver,"John Doe");
+        String customerOrderDate2 = WebUtilities.returnOrderDate(driver, "John Doe");
 
         System.out.println(customerOrderDate2);
 
-        String customerOrderDate3 = WebUtilities.returnOrderDate(driver,"Stewart Dawidson");
+        String customerOrderDate3 = WebUtilities.returnOrderDate(driver, "Stewart Dawidson");
 
         System.out.println(customerOrderDate3);
 
 
-        String customerOrderDate4 = WebUtilities.returnOrderDate(driver,"Bart Fisher");
+        String customerOrderDate4 = WebUtilities.returnOrderDate(driver, "Bart Fisher");
 
         System.out.println(customerOrderDate4);
 
 
-        String customerOrderDate5 = WebUtilities.returnOrderDate(driver,"Ned Stark");
+        String customerOrderDate5 = WebUtilities.returnOrderDate(driver, "Ned Stark");
 
         System.out.println(customerOrderDate5);
 
 
-        String customerOrderDate6 = WebUtilities.returnOrderDate(driver,"Bob Martin");
+        String customerOrderDate6 = WebUtilities.returnOrderDate(driver, "Bob Martin");
 
         System.out.println(customerOrderDate6);
 
 
-        String customerOrderDate7 = WebUtilities.returnOrderDate(driver,"Samuel Jackson");
+        String customerOrderDate7 = WebUtilities.returnOrderDate(driver, "Samuel Jackson");
 
         System.out.println(customerOrderDate7);
 
 
-        String customerOrderDate8 = WebUtilities.returnOrderDate(driver,"Robert Baratheon");
+        String customerOrderDate8 = WebUtilities.returnOrderDate(driver, "Robert Baratheon");
 
         System.out.println(customerOrderDate8);
 
     }
 
     @Test
-    public void test3(){
+    public void test3() {
 
         WebUtilities.orderVerify(driver, "Bart Fisher", "01/16/2021");
 
     }
-
-
 
 
 }
