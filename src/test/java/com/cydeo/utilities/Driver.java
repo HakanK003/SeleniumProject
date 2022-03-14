@@ -61,6 +61,10 @@ public class Driver {
     }
 
 
+    //quit() --> nullPointerException
+    //close() --> noSuchSessionID
+    //closeDiverMethod() --> nice
+
 
     /*
     This method will make sure our driver value is always null after using quit() method
